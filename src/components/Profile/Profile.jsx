@@ -1,16 +1,20 @@
 import React from "react"
+ import { Avatar, Description, ProfileCard } from './Profile.styled';
+
+
+
+
 
 
 export const Profile = ({ username, avatar, tag, location, stats }) => {
- 
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
+    <ProfileCard>
+      <Description>
+        <Avatar src={avatar} alt={username} className="avatar" />
         <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
+        <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
-      </div>
+      </Description>
 
       <ul className="stats">
         <li>
@@ -26,6 +30,6 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
           <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </ProfileCard>
   );
 };
