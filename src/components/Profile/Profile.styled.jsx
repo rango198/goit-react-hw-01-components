@@ -23,6 +23,6 @@ export const Avatar = styled.img`
   align-items: center;
   justify-content: center;
 
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
 `;
