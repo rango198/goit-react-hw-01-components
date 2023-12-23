@@ -41,22 +41,22 @@ export const StatsList = styled.ul`
 `;
 
 export const Info = styled.p`
-  color: '#9e202';
+  
   font-family: 'Roboto';
-  font-size: 12px;
-`;
-
-export const Name = styled.p`
   font-weight: 500;
 `;
 
-export const Tag = styled.p`
-  color: '#2b3162';
+export const Name = styled(Info)`
+  font-size: 16px;
 `;
 
-export const Location = styled.p`
-  color: '#1a236a';
- font-weight: 500;
+export const Tag = styled(Info)`
+    font-size: 12px;
+`;
+
+export const Location = styled(Info)`
+   font-size: 14px;
+ 
 `;
 
 export const StatsItem = styled.li`
@@ -69,20 +69,18 @@ export const StatsItem = styled.li`
 
 export const StatsInfo = styled.span`
   margin: 0px 5px;
-  color: '#1a236a';
   font-size: 16px;
+  display: block;
+  text-align: center;
 `;
 
 export const Label = styled(StatsInfo)`
   font-weight: 400;
-  display: block;
-  text-align: center;
+  
 `;
 
 export const Quantity = styled(StatsInfo)`
-  color: '#1a236a';
-  text-shadow: 1px 1px 1px #fff;
+    text-shadow: 1px 1px 1px #fff;
   font-weight: 700;
-  display: block;
-  text-align: center;
+  
 `;
