@@ -16,12 +16,9 @@ export const StaticList = styled.ul`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-
   margin: 20px auto;
-  /* margin-bottom: 5px; */
   max-width: 100%;
   width: 360px;
-
   box-shadow:
     -1px -1px 1px rgb(95, 113, 177),
     1px 1px 1px rgb(95, 113, 177);
@@ -39,9 +36,7 @@ export const Title = styled.h2`
 `;
 
 export const StatList = styled.ul`
-  /* width: 100%; */
   display: flex;
-  /* align-items: center; */
   gap: 8px;
 `;
 
@@ -50,20 +45,15 @@ export const StatListItem = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: 100%;
-
   text-shadow: 0 0 1px #000;
-
   :first-of-type {
     border-bottom-left-radius: 0.5rem;
   }
-
   :last-of-type {
     border-bottom-right-radius: 0.5rem;
   }
-
   padding: 3px;
   background-color: ${props => getRandomHexColor(props.index)};
 `;
