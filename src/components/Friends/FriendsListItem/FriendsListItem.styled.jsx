@@ -35,21 +35,7 @@ export const Status = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: ${props => {
+    return props.isOnline ? 'green' : 'red';
+  }};
 `;
-
-export const StatusRed = styled(Status)`
-  background-color: red;
-`;
-
-export const StatusGreen = styled(Status)`
-  background-color: green;
-`;
-
-// .green {
-//     background-color: green;
-// }
-
-// .red {
-//     background-color: red;
-// }
